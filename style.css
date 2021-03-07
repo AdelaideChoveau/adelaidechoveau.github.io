@@ -1,33 +1,68 @@
+{ box-sizing: border-box;  border:}
+
 body {
     font-family: 'Oxygen', sans-serif;
     font-size: 1rem;
-      margin: 0 auto;
-      background-color: #FFFFFF;
-      color: #0011B2;
-  
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: #0011B2;
   }
   
-  .sectionleft {
-    width: 50rem;
-    float: left;
-  }
-  
-  .floatleft {
-    width: 50rem;
-    border: 5px solid red;
-  }
-  
-  blockquote {
+.presentation {
+  display: flex;
+  width: 50%;
+  margin: 0 2% 2% 0;
+  float: right;
+  border: 5px solid blue;
+  flex-basis: 20%;
+}
+
+.sectionright {
+  margin: 0 2% 2% 0;
+}
+
+.floatleft {
+  width: 70%;
+  color: #FFFFFF;
+  margin: 0;
+  width: 100%;
+  flex-basis: 10%;
+}
+
+.sectionleft {
+  color: #FFFFFF;
+  margin: -0.2;
+  padding: 0;
+  width: 50%;
+  z-index: 0;
+}
+
+blockquote {
     background-color: #FFC700;
     color: #FFFFFF;
-    margin: 0;
-    padding: 4rem;
+    margin: 0 0 0 0;
+    padding: 3.5%;
+    width: 40%;
+    flex-basis: 10%;
+ 
   }
-  
+
+  .projects {
+    background-color: #FFC700;
+    color: #FFFFFF;
+    margin: -10% 0 0 10%;
+    padding: 3%;
+    width: 40%;
+    flex-basis: 10%;
+
+    float: right;
+  }
   
   nav ul {
     text-align: right;
     margin: 2rem;
+  
   }
   
   nav li {
@@ -38,6 +73,7 @@ body {
     display: inline-block;
     text-align: center;
     padding: 0.3rem;
+    flex-basis: 10%;
   }
   
   nav a {
@@ -46,30 +82,20 @@ body {
     margin: 1rem 1rem 1rem 1rem;
   }
   
-  .sectionright {
-    width: 60rem;
-    float: right;  
-  margin: 0 4rem 0 0;
-  }
-  
-  aside {
-  border: 5px solid blue;
-  }
-  
-  h1 {
-    margin: 6rem 0 3rem 0;
-  }
   
   h1:hover {
     background-color:#FFC700;
   }
   
   h2 {
-    padding: 2rem;
+    padding: 2%;
     font-size: 1rem;
+    margin: 5% 0 1% 5%;
     background-color:#0011B2;
     color:#FFFFFF;
     border-radius: 30px;
+    width: 40%;
+    float: right;
   }
   
   h2:hover {
