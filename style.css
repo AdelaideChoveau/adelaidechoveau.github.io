@@ -11,40 +11,20 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-accent-color);
     color: var(--dark-accent-color);
-    display: flex;
   }
 
-  .h1 {
-    display: flex;
-    flex-basis: 10%;
-    margin: 10% 0 0 -2%;
-    padding: 3%;
-    width: 40%;
-    justify-content: right;
-    z-index: 10;
-    border: 5px solid var(--dark-accent-color);
-  }
-  
-  h1:hover {
-    background-color:var(--main-accent-color);
-  }
-  
-  h3 {
-    font-size: 2rem;
-  }
 
 .content {
   margin: 50px 25px;
-  h1 {
-    margin-bottom: 25px;
-  }
 }
 
+/*
 .scroll {
   &-top {
     right: 25px;
   }
 }
+*/
 
 .nav {
   display: flex;
@@ -56,7 +36,6 @@ body {
   list-style-type: none;
   justify-content: space-around;
   text-align: right;
-  margin: 2rem;
 }
 
 .nav li {
@@ -99,13 +78,40 @@ body {
   }
 }
 
+h1 {
+  padding: 0.5rem;
+}
+
+h1:hover {
+  background-color:var(--main-accent-color);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.presentationSection {
+
+}
+
+.presentationHero {
+  text-align: right;
+}
+
+.presentationButton {
+display: inline-block;
+width: 40px;
+height: 40px;
+border-radius: 40px;
+background-color: var(--main-accent-color);
+text-align: center;
+}
 
 .presentationParagraph {
-  color: var(--light-accent-color);
-  z-index: 0;
-  margin: -20px;
-  padding: 3%;
   display: flex;
+  color: var(--light-accent-color);
+  margin: -50px 0 0 0;
+  padding: 3%;
 }
 
 .presentationImage {
@@ -113,17 +119,28 @@ body {
 }
 
 .presentationImageSrc {
-  width: 80%;
+  width: 70%;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: -1;
 }
 
 .presentationText {
   float: right;
-  margin: 0 0 0 -500px; 
+  width: 80%;
+  margin: 0 0 0 -100px;
 }
 
 .presentationText1 {
   background-color: var(--dark-accent-color);
   padding: 25px;
+}
+
+.presentationText2 {
+  background-color: var(--main-accent-color);
+  padding: 25px;
+  height: 200px;
 }
 
 
