@@ -11,43 +11,70 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-accent-color);
     color: var(--dark-accent-color);
+    display: flex;
   }
 
+  .h1 {
+    display: flex;
+    flex-basis: 10%;
+    margin: 10% 0 0 -2%;
+    padding: 3%;
+    width: 40%;
+    justify-content: right;
+    z-index: 10;
+    border: 5px solid var(--dark-accent-color);
+  }
+  
+  h1:hover {
+    background-color:var(--main-accent-color);
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
 
-/* ----------Menu Header-------- */
+.content {
+  margin: 50px 25px;
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
+.scroll {
+  &-top {
+    right: 25px;
+  }
+}
 
 .nav {
-  list-style: none;
-  margin: 0; 
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav ul {
-  display:inline-block;
   display: flex;
-  justify-content: flex-end;
+  list-style-type: none;
+  justify-content: space-around;
   text-align: right;
   margin: 2rem;
 }
 
 .nav li {
-  list-style: none;
-  display:inline-block;
-  
+  width: 200px;
+  text-decoration: none;
 }
 
 .nav a {
   text-decoration: none;
   display: block;
-  background-color: var(--main-accent-color);
   color: var(--light-accent-color);
+  background-color: var(--main-accent-color);
   margin: 1rem 1rem 1rem 1rem;
-  border-radius: 30px;
-  padding: 0.5em;
+  padding: 0.5em 2em;
 }
 
 .nav a:hover {
-  background: #1565C0;
+  background: var(--dark-accent-color);
 }
 
 @media all and (max-width: 800px) {
@@ -72,44 +99,33 @@ body {
   }
 }
 
-/* ----------Menu Header-------- */
 
-.presentationTitle {
-  display: flex;
-  width: 30%;
-  margin: 0 2% 2% 0;
-  padding: 0 20%;
-  float: right;
-  border: 5px solid var(--dark-accent-color);
-  flex-basis: 20%;
-}
-
-.presentationSection {
+.presentationParagraph {
   color: var(--light-accent-color);
-  padding: 0;
   z-index: 0;
-  margin: -20px; 
-}
-
-.mainImage {
-  width: 60%;
-  color: var(--light-accent-color);
-  flex-basis: 10%;
-  float: left;
-  margin: 0 0 60px 0;
-
-}
-
-.presentation {
-  display: inline-block;
-  background-color: var(--dark-accent-color);
-  flex-basis: 10%;
-  margin: 0 0 0 -2%;
+  margin: -20px;
   padding: 3%;
-  width: 40%;
-  float: right;
-  z-index: 10;
+  display: flex;
 }
+
+.presentationImage {
+  width: 80%;
+}
+
+.presentationImageSrc {
+  width: 80%;
+}
+
+.presentationText {
+  float: right;
+  margin: 0 0 0 -500px; 
+}
+
+.presentationText1 {
+  background-color: var(--dark-accent-color);
+  padding: 25px;
+}
+
 
 blockquote {
     background-color: var(--main-accent-color);
@@ -129,12 +145,6 @@ blockquote {
     float: right;
   }
   
-  h1:hover {
-    background-color:var(--main-accent-color);
-  }
   
-  
-  h3 {
-    font-size: 2rem;
-  }
+
   
