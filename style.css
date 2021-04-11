@@ -13,6 +13,31 @@ body {
     color: var(--dark-accent-color);
   }
 
+h1 {
+    padding: 0.3rem;
+    margin: 0;
+  }
+  
+h1:hover {
+    background-color:var(--main-accent-color);
+  }
+
+h2 {
+    font-size: 2rem;
+  }
+  
+h3 {
+    font-size: 2rem;
+  }
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.subText {
+  font-size: 0.8rem;
+}
 
 .content {
   margin: 50px 25px;
@@ -36,6 +61,7 @@ body {
   list-style-type: none;
   justify-content: space-around;
   text-align: right;
+  margin: 0;
 }
 
 .nav li {
@@ -78,23 +104,16 @@ body {
   }
 }
 
-h1 {
-  padding: 0.5rem;
-}
-
-h1:hover {
-  background-color:var(--main-accent-color);
-}
-
-h3 {
-  font-size: 2rem;
-}
 
 .presentationSection {
 
 }
 
 .presentationHero {
+  text-align: right;
+}
+
+.presentationFollow {
   text-align: right;
 }
 
@@ -105,6 +124,8 @@ height: 40px;
 border-radius: 40px;
 background-color: var(--main-accent-color);
 text-align: center;
+justify-content: center;
+margin: 5px;
 }
 
 .presentationParagraph {
@@ -112,6 +133,7 @@ text-align: center;
   color: var(--light-accent-color);
   margin: -50px 0 0 0;
   padding: 3%;
+  justify-content: space-between;
 }
 
 .presentationImage {
@@ -127,9 +149,9 @@ text-align: center;
 }
 
 .presentationText {
-  float: right;
-  width: 80%;
-  margin: 0 0 0 -100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .presentationText1 {
@@ -140,26 +162,50 @@ text-align: center;
 .presentationText2 {
   background-color: var(--main-accent-color);
   padding: 25px;
-  height: 200px;
+}
+
+.socials {
+  padding: 0.3rem;
+  margin: 0;
+  color: var(--dark-accent-color);
 }
 
 
 blockquote {
     background-color: var(--main-accent-color);
     color: var(--light-accent-color);
-    margin: 0;
+    margin: 1% 0 0 1%;
     padding: 3.5%;
     width: 40%;
   }
 
   .projects {
-    background-color: var(--main-accent-color);
-    color: var(--light-accent-color);
-    margin: 1% 0 0 10%;
+    color: var(--main-accent-color);
+    margin: 1% 0 0 1%;
     padding: 3%;
-    width: 40%;
-    flex-basis: 10%;
-    float: right;
+  }
+
+  .projectContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .projectCard {
+    width: 250px;
+    height: 400px;
+    box-shadow: 10px 10px 20px;
+    background-color: var(--dark-accent-color);
+    border-radius: 40px;
+  }
+
+  .projectImage {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 40px;
+  }
+
+  hr {
+    margin: 10px 20px;
   }
   
   
