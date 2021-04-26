@@ -13,6 +13,11 @@ body {
     color: var(--dark-accent-color);
   }
 
+footer {
+  text-align: center;
+  padding: 80px;
+}
+
 h1 {
     padding: 0.3rem;
     margin: 0;
@@ -39,17 +44,8 @@ p {
   font-size: 0.8rem;
 }
 
-.content {
-  margin: 50px 25px;
-}
 
-/*
-.scroll {
-  &-top {
-    right: 25px;
-  }
-}
-*/
+
 
 .nav {
   display: flex;
@@ -65,7 +61,7 @@ p {
 }
 
 .nav li {
-  width: 200px;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -82,28 +78,33 @@ p {
   background: var(--dark-accent-color);
 }
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
+.burger {
+  display: none;
 }
 
-@media all and (max-width: 600px) {
+
+@media only screen and (max-width: 1000px) {
+  .burger {
+  display: block;
+  font-size: 30px;
+  background-color: white;
+}
   .nav {
-    flex-flow: column wrap;
-    padding: 0;
+    display: none;
   }
-  .nav a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+
+  .quote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-  .nav li:last-of-type a {
-    border-bottom: none;
+
+
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-
 
 .presentationSection {
 
@@ -131,7 +132,7 @@ margin: 5px;
 .presentationParagraph {
   display: flex;
   color: var(--light-accent-color);
-  margin: -50px 0 0 0;
+  margin: -10px 0 0 0;
   padding: 3%;
   justify-content: space-between;
 }
@@ -151,7 +152,7 @@ margin: 5px;
 .presentationText {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 .presentationText1 {
@@ -180,7 +181,8 @@ blockquote {
   }
 
   .projects {
-    color: var(--main-accent-color);
+    color: var(--light-accent-color);
+    background-color: var(--dark-accent-color);
     margin: 1% 0 0 1%;
     padding: 3%;
   }
@@ -194,20 +196,48 @@ blockquote {
     width: 250px;
     height: 400px;
     box-shadow: 10px 10px 20px;
-    background-color: var(--dark-accent-color);
-    border-radius: 40px;
+    color: var(--dark-accent-color);
+    background-color: var(--light-accent-color);
+
   }
 
   .projectImage {
-    margin-top: 25px;
-    width: 250px;
-    border-radius: 40px;
+    display: flex;
+    margin: 25px 20px 0 0;
+    width: 200px;
+    border-radius: 200px;
   }
 
   hr {
     margin: 10px 20px;
   }
   
+  .project-link {
+    text-decoration: none;
+    color:var(--dark-accent-color);
+  }
+
+  .scrollToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: var(--light-accent-color);
+    color:var(--dark-accent-color);
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .scrollToTop:hover {
+    background: var(--main-accent-color);
+  }
+  
+  .scrollToTop-show {
+    display: block;
+  }
   
 
   

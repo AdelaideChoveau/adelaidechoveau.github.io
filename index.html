@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👋 Adélaïde Choveau</title>
     <link href="style.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/9156d99799.js" crossorigin="anonymous"></script>
 </head>
 <body>  
-
-<!-- <button onclick="scrollToTop()" class="scroll scroll-top">☝️</button> -->
 
 <div class="content">
 
 <header>
     <nav class="nav">
-        <div>LOGO</div>
-        
+        <div>LOGO</div>    
         <ul class="menuHeader">
-            <li><a href="#about">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-me">Home</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
         </ul>
+        <div class=burger id="burger"><i class="fas fa-bars"></i></div>
+        
+
     </nav>
 </header>
+
+<a class="scrollToTop" title="scroll">&uarr;</a>
 
 <section class="presentationSection">
     
@@ -42,9 +44,9 @@
 
     <div class="presentationParagraph"> 
 
-        <div class=presentationImage >
+         <div class=presentationImage >
             <img src="./developergirl.png" alt="Really cool software developper" class="presentationImageSrc">
-        </div>  
+        </div> 
                    
 
         <div class=presentationText>
@@ -88,18 +90,18 @@
 </blockquote>
 </section>
  
-<section class="projects">
+<section class="projects" id="my-projects">
     <h2>Find my projects there</h2>
     <cite>Under construction</cite>
 
     <div class="projectContainer">
 
         <div class="projectCard">
-            <img class="projectImage" src="" alt="My Project One Image"/>
+            <img class="projectImage" src="./aurumWellbeing.png" alt="My Project One Image"/>
             <h3>Project One</h3>
             <p class="subText">This is my project and some text about it</p>
             <hr/>
-            <p class="subText">View here</p> 
+            <p class="subText"><a class="project-link" href="#">View here</a></p> 
         </div>
         <div class="projectCard"></div>
         <div class="projectCard"></div>
@@ -109,7 +111,12 @@
 
 </section>
 
-</div>
+
+<footer id="contact-me">
+    <h2>Contact me</h2>
+    <p>adelaide.choveau@gmail.com</p>
+
+</footer>
 
 <script src="./java.js">
 </script>
